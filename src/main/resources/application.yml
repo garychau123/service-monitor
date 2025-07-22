@@ -4,3 +4,22 @@ server:
 spring:
   application:
     name: service-monitor
+  boot:
+    admin:
+      notify:
+        ms-teams:
+          enabled: true
+          webhook-url: "https://rmiteduau.webhook.office.com/webhookb2/ce1a786e-0545-4531-92a7-be8f0b4b8af4@d1323671-cdbe-4417-b4d4-bdb24b51316b/IncomingWebhook/c100e07b86e346ff9c0bfe22c9113864/7e683e51-7ec2-4436-af88-c7b000274e87/V2g6OGzUOfI9sF6QGQibDgacl-8zoj4CX-m74hncvhS481"
+          registeredTitle: "New App Registered"
+          deRegisteredTitle: "App Offline"
+          statusChangedTitle: "Status Changed"
+
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: "*"
+#   endpoint:
+#     health:
+#       show-details: always
+
